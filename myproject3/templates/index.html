@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Fifa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Fifa 19</a>
+      </div>
+    </div>
+  
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="overview.html">Click to see where you match up!</a></li>
+        <li class="dropdown">
+          <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Graphics<span class="caret"></span></a> -->
+          <!-- <ul class="dropdown-menu">
+            <li><a href="/bar">Bar Graph</a></li>
+            <li><a href="/bubble">Bubble Plot</a></li>
+            <li><a href="/map">Map</a></li>
+          </ul> -->
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <!-- Hero section with fire or gif image -->
+  <div class="hero text-center">
+    <h1>Fifa 19</h1>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <br>
+      <!-- <div class="col-md-12 jumbotron text-center">
+          <li><a href="Bar-Plot.html">Bar Graph</a></li>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div> -->
+    </div>
+
+    <!-- Filter and Metadata code -->
+    <div class="row">
+      <div class="col-md-2">
+        <!-- <div class="well"> -->
+          <!-- <form action='/api/predict' method="get" target="_blank">  
+            <div>
+              Age: <input type="text" name="age">
+              Stamina: <input type="text" name="stamina">
+            <br>
+            <br>
+              <button type="submit" value="Predict!">Submit</button>
+              
+              <button type="reset" value="Reset">Clear</button>
+            </div>
+
+          </form> -->
+          <!-- <h5>SELECT Sample:</h5> -->
+          <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
+        <!-- </div> -->
+        <!-- <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sample MetaData</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div> -->
+      </div>
+      <!-- Bubble Chart -->
+      <div class="col-md-12">
+          <div class='tableauPlaceholder' id='viz1549901474671' style='position: center'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SoccerProject_0&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SoccerProject_0&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SoccerProject_0&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1549901474671');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='920px';vizElement.style.maxWidth='1320px';vizElement.style.width='100%';vizElement.style.height='1187px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div id="bubble"></div>
+      </div>
+
+  </div>
+
+  <br>
+  <!-- Map -->
+  <div class="container-fluid">
+    <!-- <div class="col-md-2">
+    </div> -->
+    <div class="row">
+      <div class="col-mg-12">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- Bar Chart -->
+  <div class="container-fluid">
+    <!-- <div class="col-md-2">
+    </div> -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer code -->
+  <footer> 
+    <div class="inner">
+      <p class="pull-right">
+        <a href="index.html">Back to top</a>
+      </p>
+      <p>
+        -- Fifa Analysis compiled by all of us in February 2019 with UNCC Bootcamp.
+      </p>
+    </div>
+  </footer> 
+
+
+<!-- Bootstrap and JavaScript -->
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

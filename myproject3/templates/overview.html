@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>User Input</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+
+<body class="secondPageBody">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Fifa 19</a>
+      </div>
+    </div>
+  
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  
+  <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="overview.html">Click to see where you match up!</a></li>
+        <li class="dropdown"></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- END NAVBAR -->
+
+<form action='/api/predict' class="overviewForm" method="get" target="_blank">
+<div class="row">
+    <h2 align="center" class="overviewHeader">Complete the fields below to see where you would stack up</h2>
+    <div class="col-md-4">
+        <table class="attribute">
+            <tr>
+                <td>Age: </td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td>Acceleration: </td>
+                <td><input type="text" name="acceleration"></td>
+            </tr>
+            <tr>
+              <td>Aggression: </td>
+              <td><input type="text" name="aggression"></td>
+            </tr>
+            <tr>
+              <td>Ball control: </td>
+              <td><input type="text" name="ballControl"></td>
+            </tr>
+            <tr>
+              <td>Dribbling</td>
+              <td><input type="text" name="dribbling"></td>
+            </tr>
+            <tr>
+              <td>Finishing: </td>
+              <td><input type="text" name="finishing"></td>
+            </tr>
+            <tr>
+              <td>Shot power</td>
+              <td><input type="text" name="shotPower"></td>
+            </tr>
+            <tr>
+                <td>Stamina: </td>
+                <td><input type="text" name="stamina"></td>
+            </tr>
+            <tr>
+                <td>Speed: </td>
+                <td><input type="text" name="speed"></td>
+            </tr>
+            <tr>
+                <td>Strength: </td>
+                <td><input type="text" name="strength"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="Predict">Submit</button></td>
+                <td><button type="reset" value="Reset">Clear</button></td>
+            </tr>
+        </table>
+    </div>
+
+   
+</div>
+</form>
+<br>
+<br>
+
+ <!-- Footer code -->
+ <footer> 
+  <div class="inner">
+    <p class="pull-right">
+      <a href="overview.html">Back to top</a>
+    </p>
+    <p>
+      -- Fifa Analysis compiled by all of us in February 2019 with UNCC Bootcamp.
+    </p>
+  </div>
+  <br>
+<!-- </footer>  -->
+
+
+</body>
